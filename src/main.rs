@@ -21,6 +21,5 @@ async fn main() -> Result<()> {
     println!("{}\n{}",
         x.get("location").and_then(|name| name.get("name")).unwrap(), 
         x.get("current").and_then(|temp| temp.get("temp_c")).unwrap());
-    println!("Warsaw");
     Ok(())
 }
